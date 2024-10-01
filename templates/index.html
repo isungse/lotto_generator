@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>로또 번호 생성기</title>
+  <!-- Google Fonts 추가 -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <!-- 메인 컨테이너 -->
+  <div class="main-container">
+    <!-- 제목 컨테이너 -->
+    <div id="title-container">
+      <h1><span>Do nothing,</span><br>and nothing happens.</h1>
+    </div>
+
+    <!-- 번호 표시 컨테이너 -->
+    <div id="numbers-container">
+      <!-- 번호가 표시될 영역 -->
+    </div>
+
+    <!-- 버튼 컨테이너 -->
+    <div id="button-container">
+      <button id="generate-random-button" title="완전히 무작위로 번호를 생성합니다.">번호 생성</button>
+      <button id="generate-frequent-button" title="자주 나온 번호를 포함하여 번호를 생성합니다.">최다 번호</button>
+    </div>
+  </div>
+
+  <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
