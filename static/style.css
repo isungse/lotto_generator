@@ -41,6 +41,7 @@ body {
 
 #title-container h1 span {
   color: #6200ee; /* 강조 색상 */
+  line-height: 2.1;
 }
 
 /* 반응형 폰트 크기 */
